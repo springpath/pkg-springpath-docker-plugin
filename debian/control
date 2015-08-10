@@ -12,7 +12,7 @@ Vcs-Browser: https://github.com/springpath/pkg-springpath-docker-plugin
 Vcs-Git: https://github.com/springpath/pkg-springpath-docker-plugin.git
 
 Package: springpath-docker-plugin
-Architecture: all
+Architecture: amd64
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          golang-go,
