@@ -1,0 +1,24 @@
+Source: springpath-docker-plugin
+Section: devel
+Priority: extra
+Maintainer: Abhijit Hoskeri <abhijit@springpathinc.com>
+Uploaders: Abhijit Hoskeri <abhijit@springpathinc.com>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+               golang-go
+Standards-Version: 3.9.6
+Homepage: https://github.com/springpath/springpath-docker-plugin
+Vcs-Browser: https://github.com/springpath/pkg-springpath-docker-plugin
+Vcs-Git: https://github.com/springpath/pkg-springpath-docker-plugin.git
+
+Package: springpath-docker-plugin
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-go,
+         lxc-docker
+Built-Using: ${misc:Built-Using}
+Description: docker volumes plugin for Springpath
+ Docker Volume Management for Springpath springpath-volume-driver
+ is a storage driver for the clustered storage solution provided by
+ http://springpathinc.com.

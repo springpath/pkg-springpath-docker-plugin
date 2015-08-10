@@ -1,0 +1,13 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: springpath-docker-plugin
+Source: https://github.com/springpath/springpath-docker-plugin
+
+Files: *
+Copyright: 2015 Springpath
+License: GPL-2
+
+Files: debian/*
+Copyright: 2015 Abhijit Hoskeri <abhijit@springpathinc.com>
+License: GPL-2
+Comment: Debian packaging is licensed under the same terms as upstream
+

@@ -1,0 +1,12 @@
+[Unit]
+Description=Listener socket for springpath docker plugin API
+PartOf=docker.service
+
+[Socket]
+ListenStream=/run/docker/plugins/springpath
+SocketMode=0600
+SocketUser=root
+SocketGroup=root
+
+[Install]
+WantedBy=sockets.target

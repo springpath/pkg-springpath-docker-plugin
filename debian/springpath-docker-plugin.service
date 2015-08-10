@@ -1,0 +1,14 @@
+[Unit]
+Description=Volume API Plugin for docker
+Documentation=https://github.com/springpath/springpath-docker-plugin
+After=network.target springpath-docker-plugin.socket
+Requires=springpath-docker-plugin.socket
+
+[Service]
+ExecStart=/usr/bin/springpath-docker-plugin
+LimitNOFILE=1048576
+LimitNPROC=1048576
+LimitCORE=infinity
+
+[Install]
+WantedBy=multi-user.target
