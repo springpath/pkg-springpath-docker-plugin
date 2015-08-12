@@ -1,8 +1,8 @@
 [Unit]
 Description=Volume API Plugin for docker
 Documentation=https://github.com/springpath/springpath-docker-plugin
-After=network.target springpath-docker-plugin.socket
-Requires=springpath-docker-plugin.socket
+After=network.target
+Requires=docker.service
 
 [Service]
 ExecStart=/usr/bin/springpath-docker-plugin
